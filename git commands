@@ -1,1 +1,96 @@
+ What is git ?
+Git is a distributed version control system (VCS)
+
+What are deployments and different types of deployment strategies ?
+Deployment is the process of releasing code to a live environment where users can access it.
+
+Types of Deployment Strategies
+ Strategy         Key Idea                            Downtime    Risk     
+Recreate        Stop old, deploy new                    Yes       High     
+Rolling         Gradually replace old with new            No        Medium   
+Blue-Green      Two environments; switch after testing    No        Low      
+Canary          Release to small users first              No        Low      
+A/B Testing     Show different versions to users          No        Medium   
+Shadow          New version runs silently with traffic    No        Very Low 
+
+Difference between monolithic and microlithic.
+ Feature            Monolithic                 Microservices                  
+ Codebase         One large codebase      Multiple small codebases       
+ Deployment       One unit                Independently deployable units 
+ Scalability      Limited                 Highly scalable                
+ Failure impact   Whole app affected      Only one service affected      
+ Best for         Small to medium apps    Large, complex apps      
+
+Why Dev-ops ?
+DevOps is a culture and set of practices that brings developers and IT operations together to build, test, and release software faster and more reliably.
+Key Benefits of DevOps
+Faster delivery of software features and updates.
+Better quality through continuous testing and integration.
+Reduced downtime with automated monitoring and rollback.
+Improved collaboration between dev and ops teams.
+More scalability and flexibility via tools like Docker, Kubernetes, etc.
+
+What is a fork ?
+A fork is a personal copy of someone else's repository, created under your GitHub account.
+A fork is your own full copy of a repository, used to make changes independently before merging them back.
+
+Basic Git Commands
+git init                                Initializes a new Git repository
+git clone                               Copies an existing repository to your local machine               
+git status                              Shows the current state of the working directory and staging area 
+git add                                 Adds changes in a file to the staging area 
+git add                                 Stages all changed files in the current directory                 
+git commit -m                           Saves staged changes with a message              
+git push                                Sends commits to the remote repository                            
+git pull                                Fetches and merges changes from the remote repository             
+git fetch                               Downloads changes from remote but doesn't merge              
+git merge                               Combines another branch into the current branch                   
+git branch                              Lists all local branches                                          
+git branch                              Creates a new branch                                              
+git checkout                            Switches to another branch                                        
+git checkout -b                         Creates and switches to a new branch                              
+git log                                 Shows the commit history                                          
+git diff                                Shows changes between working directory and staging area          
+git reset                               Removes from staging area                       
+git rm                                  Removes a file from working directory and staging                 
+git stash                               Temporarily saves uncommitted changes                          
+git stash pop                           Applies the latest stashed changes and removes them               
+git remote -v                           Shows the URLs of the remote repositories                
+git config --global user.name           Sets your Git username globally                    
+git config --global user.email          Sets your Git email globally        
+
+Difference Git Pull vs Git Fetch.
+git fetch is used to download the latest changes from a remote repository to your local machine without modifying your current working branch. It updates your remote-tracking branches so you can review or compare the changes before deciding to merge them. This command is safe because it does not affect your local work and gives you full control over when and how to integrate the updates.
+git pull on the other hand is a combination of git fetch followed by git merge. It not only fetches the latest changes from the remote repository but also automatically merges those changes into your current branch. While it saves time and keeps your branch up to date quickly, it can lead to merge conflicts if there are differences between your local code and the remote version. Therefore, git pull is best used when you’re ready to update and synchronize your code with the remote repository.
+
+Why only docker is used, not other tools ? 
+Docker is widely used because it is simple, fast, portable, and well-supported, making it the most practical tool for containerizing and deploying applications today.
+
+Difference between VM and container.
+Virtual Machines (VMs) 
+Emulate entire hardware systems, including OS
+Run a full guest operating system on top of the host OS
+Heavyweight – uses more CPU, memory, and disk
+Slower startup due to full OS boot
+Better for isolated, multi-OS environments
+Containers
+Share the host OS kernel, but isolate the app environment
+Run only the application and its dependencies
+Lightweight – faster and uses fewer resources
+Fast startup – almost instant
+Better for microservices, CI/CD, and cloud-native apps
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
