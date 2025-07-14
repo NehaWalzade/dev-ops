@@ -38,15 +38,14 @@ Basic Git Commands
 git init                                Initializes a new Git repository
 git clone                               Copies an existing repository to your local machine               
 git status                              Shows the current state of the working directory and staging area 
-git add                                 Adds changes in a file to the staging area 
-git add                                 Stages all changed files in the current directory                 
+git add                                 Adds changes in a file to the staging area                  
 git commit -m                           Saves staged changes with a message              
 git push                                Sends commits to the remote repository                            
 git pull                                Fetches and merges changes from the remote repository             
 git fetch                               Downloads changes from remote but doesn't merge              
 git merge                               Combines another branch into the current branch                   
 git branch                              Lists all local branches                                          
-git branch                              Creates a new branch                                              
+git branch <name>                       Creates a new branch                                              
 git checkout                            Switches to another branch                                        
 git checkout -b                         Creates and switches to a new branch                              
 git log                                 Shows the commit history                                          
