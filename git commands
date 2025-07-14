@@ -2,7 +2,7 @@
 Git is a distributed version control system (VCS)
 
 What are deployments and different types of deployment strategies ?
-Deployment is the process of releasing code to a live environment where users can access it.
+Deployment is the process of releasing code to a live environment where users can access it
 
 Types of Deployment Strategies
  Strategy         Key Idea                            Downtime    Risk     
